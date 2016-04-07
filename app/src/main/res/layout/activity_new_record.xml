@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.oukranos.ophiuchus.NewRecordActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Health Record #152190"
+        android:id="@+id/txv_record_id"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/grid_info"
+        android:layout_below="@+id/txv_record_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:numColumns="4"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/btn_edit_record"
+        android:scaleType="fitCenter"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:text="Edit Health Record Info..."
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/grid_info" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/btn_audio_record"
+        android:scaleType="fitCenter"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:text="Add Instrument Readings"
+        android:layout_below="@+id/btn_edit_record"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/btn_database_save"
+        android:scaleType="fitCenter"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:text="Save to Database"
+        android:layout_below="@+id/btn_audio_record"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

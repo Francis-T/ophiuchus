@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="999999"
+        android:id="@+id/txv_id"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="OPh_41243253235.amr"
+        android:id="@+id/txv_file_name"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txv_id"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Status: NOT SENT"
+        android:id="@+id/txv_sent_status"
+        android:layout_below="@+id/txv_id"
+        android:layout_toRightOf="@+id/txv_id"
+        android:layout_toEndOf="@+id/txv_id" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:maxLines="3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="..."
+        android:id="@+id/txv_content"
+        android:layout_below="@+id/txv_sent_status"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/txv_id"
+        android:layout_toEndOf="@+id/txv_id" />
+</RelativeLayout>
